@@ -5,11 +5,17 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import lazyload from 'vue-lazyload'
-import '@/assets/css/reset.css'
+import scroll from '@/components/base/scroll'
+import '@/assets/css/reset.scss'
+import '@/assets/font/iconfont.css'
+import 'vue-awesome-swiper/node_modules/swiper/dist/css/swiper.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+Vue.component(scroll.name, scroll)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 Vue.use(lazyload, {
-  loading: '@/assets/img/loading.gif'
+  loading: '/static/loading.gif'
 })
 /* eslint-disable no-new */
 new Vue({

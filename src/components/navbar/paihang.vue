@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    排行
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'paihang'
 }
 </script>
 
